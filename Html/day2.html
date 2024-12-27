@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Form</title>
+    <style>
+        .form-container {
+            display: inline-block;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            background-color: rgb(119, 119, 207);
+           margin-left: 500px;
+           margin-right: 50px;
+        }
+
+        .form-container h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-container input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-container button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-container button.submit {
+            background-color: #28a745;
+            color: white;
+            border-radius: 50px;
+        }
+
+        .form-container button.clear {
+            background-color: #dc3545;
+            color: white;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body style="background-color: aqua;">
+    <div class="form-container">
+        <h3>Welcome</h3>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <button type="submit" class="submit">Submit</button>
+            <button type="reset" class="clear">Clear</button>
+        </form>
+    </div>
+</body>
+</html>
